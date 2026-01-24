@@ -1,2 +1,4 @@
-add_subdirectory_ifdef(CONFIG_SVAL_KSCAN kscan)
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
+add_subdirectory_ifdef(CONFIG_SVAL_KSCAN kscan)
