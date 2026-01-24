@@ -9,7 +9,7 @@
 
 /{
     kscan0: kscan_fingers {
-	    compatible = "zmk,kscan-gpio-matrix-is-pressed";
+	    compatible = "zmk,kscan-sval-matrix";
  		wakeup-source;
 
         diode-direction = "row2col";
