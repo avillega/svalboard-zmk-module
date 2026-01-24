@@ -15,6 +15,9 @@ endif # BOARD_SVALBOARD_LEFT
 
 if BOARD_SVALBOARD_LEFT || BOARD_SVALBOARD_RIGHT
 
+config ZMK_MATRIX_TRANSFORM
+    default y
+
 config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
     default 90
 
@@ -28,13 +31,13 @@ config ZMK_SPLIT
     default y
 
 config ZMK_SPLIT_WIRED
-	default y
+    default y
 
 config ZMK_SPLIT_WIRED_CMD_BUFFER_ITEMS
-	default 30
+    default 30
 
 config ZMK_SPLIT_WIRED_EVENT_BUFFER_ITEMS
-	default 30
+    default 30
 
 config SERIAL
     default y
