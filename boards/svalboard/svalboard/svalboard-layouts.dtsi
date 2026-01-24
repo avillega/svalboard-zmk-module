@@ -3,7 +3,6 @@
 / {
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
-        transform = <&default_transform>;
         display-name = "Default Layout";
 
 
