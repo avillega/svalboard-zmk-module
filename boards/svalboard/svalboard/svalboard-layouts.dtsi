@@ -4,6 +4,7 @@
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
         transform = <&default_transform>;
+        display-name = "Default Layout";
 
 
         keys  //                     w   h    x    y     rot    rx    ry
