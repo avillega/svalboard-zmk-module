@@ -121,6 +121,35 @@ zephyr_udc0: &usbd {
 };
 */
 
+/ {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split_left: trackball_split_left@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+
+        trackball_split_right: trackball_split_right@1 {
+            compatible = "zmk,input-split";
+            reg = <1>;
+        };
+    };
+
+    trackball_listener_left: trackball_listener_left {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackball_split_left>;
+    };
+
+    trackball_listener_right: trackball_listener_right {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackball_split_right>;
+    };
+};
+
 &timer {
     status = "okay";
 };
